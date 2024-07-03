@@ -1,7 +1,7 @@
 import express, { Router, Request, Response } from 'express';
-import { connect } from '../db/connect';
+import { connect } from '../db/connect.js';
 import { ObjectId } from 'mongodb';
-import { Product } from '../models/product';
+import { Product } from '../models/product.js';
 
 const router: Router = express.Router();
 

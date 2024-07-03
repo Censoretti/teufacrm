@@ -1,46 +1,13 @@
 {
   "compilerOptions": {
-    // Specify the target JavaScript version for compilation (ES6 in this example)
-    "target": "es6",
-    // Indicate the module to be used in the project (CommonJS recommended for Node.js projects)
-    "module": "commonjs",
-    // Define the output directory for transpiled JavaScript files
-    "outDir": "./dist",
-    // Set the root directory for TypeScript files to be compiled
-    "rootDir": "src",
-    // Enable strict type checking during compilation
-    "strict": true,
-    // Prevent implicit 'any' type inference
-    "noImplicitAny": true,
-    // Allow interoperability with ES modules
-    "esModuleInterop": true,
-    // Skip type checking for external libraries
-    "skipLibCheck": true,
-    // Ensure consistent file name casing
-    "forceConsistentCasingInFileNames": true,
-    // Generate metadata for decorators
-    "emitDecoratorMetadata": true,
-    // Enable experimental decorators
-    "experimentalDecorators": true,
-    // Define module resolution for Node.js
+    "target": "ES6",
+    "module": "ESNext",
     "moduleResolution": "node",
-    // Map aliases for modules
-    "paths": {
-      "@types/express": ["./node_modules/@types/express"],
-      "@types/mongodb": ["./node_modules/@types/mongodb"],
-      "@types/body-parser": ["./node_modules/@types/body-parser"]
-    }
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist"
   },
-  "include": [
-    // Include all TypeScript files in the 'src' directory
-    "src/**/*.ts",
-    // Include all TypeScript test files
-    "tests/**/*.ts"
-  ],
-  "exclude": [
-    // Exclude the 'node_modules' directory
-    "node_modules",
-    // Exclude the 'dist' output directory
-    "dist"
-  ]
+  "include": ["src"]
 }
